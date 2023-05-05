@@ -9,17 +9,21 @@ body{
     width:100vw;
     height:100vh;
 }
+
+@mixin flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .MainWrapper{
     width:100vw;
     height:100vh;
     background-color:rgb(5, 50, 118);
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     color:rgb(249, 236, 200);
     font-style: italic;
     font-weight:bold;
+    @include flex;
 
     h1{
         font-size:2rem;
@@ -49,3 +53,69 @@ body{
         background-color:rgb(87, 128, 168);
     }
 }
+.popUpWrapper::before {
+    content: "";
+    background-image: url(../Assets/background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: blur(7px);
+  }
+  
+  .popUpContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    width:50%;
+
+   
+  }
+  
+  .image{
+    img{
+        width:100%;
+        height:100%;
+        border-radius:5px 0 0 5px;
+    }
+  }
+
+  .content{
+   @include flex;
+   background-image: linear-gradient(to bottom, rgba(127,200,210,255), rgba(213,241,244,255),
+   rgba(95,193,210,255));
+   border-radius:0 5px 5px 0;
+
+
+   input{
+    margin:15px;
+    padding:10px 20px;
+    outline: none;
+    border:none;
+    color:#ca0b12;
+    font-style: italic;
+    font-size: 1rem;
+    border-radius:5px;
+   }
+
+   h3{
+    color:#ca0b12;
+   }
+
+   button{
+    background-color:#ca0b12;
+    color:white;
+    padding:10px 20px;
+    width:100px;
+    border:none;
+    cursor: pointer;
+   }
+  }
