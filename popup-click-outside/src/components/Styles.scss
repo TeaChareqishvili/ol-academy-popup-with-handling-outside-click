@@ -1,0 +1,51 @@
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    width:100vw;
+    height:100vh;
+}
+.MainWrapper{
+    width:100vw;
+    height:100vh;
+    background-color:rgb(5, 50, 118);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:rgb(249, 236, 200);
+    font-style: italic;
+    font-weight:bold;
+
+    h1{
+        font-size:2rem;
+        margin-bottom:10px;
+
+    }
+
+    p{
+        padding:10px;
+        font-size:1.5rem;
+    }
+    button{
+        padding:10px 20px;
+        border-radius:5px;
+        border:none;
+        background-color:rgb(128, 167, 193);
+        color:rgb(249, 236, 200);
+        width:10%;
+        font-size:1.5rem;
+        font-weight:bold;
+        margin-top:20px;
+        cursor: pointer;
+
+       
+    }
+    button:hover{
+        background-color:rgb(87, 128, 168);
+    }
+}
