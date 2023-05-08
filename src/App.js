@@ -1,12 +1,9 @@
-
- import { MainPage } from "./components/PopupIntro";
-
+import { MainPage } from "./components/MainPage";
 
 function App() {
   return (
     <div className="App">
-       <MainPage/> 
-      
+      <MainPage />
     </div>
   );
 }

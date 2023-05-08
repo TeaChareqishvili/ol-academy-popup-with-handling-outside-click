@@ -1,4 +1,4 @@
-import "../components/Styles.scss";
+import "./PopUpStyle.scss";
 import { useState } from "react";
 import { Popup } from "./Popup";
 

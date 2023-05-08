@@ -1,4 +1,4 @@
-import "../components/Styles.scss";
+import "./PopUpStyle.scss";
 import popUpImg from "../Assets/popupimg.jpeg";
 import { useRef } from "react";
 import { useEffect } from "react";
@@ -9,7 +9,6 @@ function Popup({ close }) {
 
   useEffect(() => {
     const handleClick = (e) => {
-      console.log({ target: e.target });
       if (popRef.current && wrapperRef.current) {
         if (
           wrapperRef.current.contains(e.target) &&
