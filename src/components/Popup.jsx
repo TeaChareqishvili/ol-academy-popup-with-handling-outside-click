@@ -1,5 +1,5 @@
 import "./PopUpStyle.scss";
-import popUpImg from "../Assets/popupimg.jpeg";
+  // import popUpImg from "../../public/assets/popup.jpeg";
 import { useRef } from "react";
 import { useEffect } from "react";
 
@@ -29,7 +29,7 @@ function Popup({ close }) {
     <div className="popUpWrapper" ref={wrapperRef}>
       <div className="popUpContent" ref={popRef}>
         <div className="image">
-          <img src={popUpImg} alt="travel" />
+          <img src="/assets/popupimg.jpg" alt="travel" />
         </div>
         <div className="content">
           <h3>Sign Up</h3>

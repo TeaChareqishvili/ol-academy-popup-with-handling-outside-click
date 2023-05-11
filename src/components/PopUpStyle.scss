@@ -46,7 +46,7 @@
 }
 .popUpWrapper::before {
     content: "";
-    background-image: url(../Assets/background.jpeg);
+    background-image: url('../../public/assets/background.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
